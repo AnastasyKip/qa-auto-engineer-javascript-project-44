@@ -8,6 +8,6 @@
 import runGame from "../src/index.js";
 import generateQuestionAndAnswer from "../src/games/calc.js";
 
-const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+const description = 'What is the result of the expression?';
 
 runGame(description, generateQuestionAndAnswer);

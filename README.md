@@ -6,3 +6,6 @@
 
 ### asciinema of brain-even
 https://asciinema.org/a/sYjRAOYpHtKI2yV5yNWnYW7iD
+
+### asciinema of brain-calc
+https://asciinema.org/a/dK0L0m9hmpJIj0QGYmF8bHxXv
