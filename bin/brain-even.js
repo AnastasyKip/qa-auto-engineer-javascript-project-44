@@ -5,9 +5,7 @@
 //УНИКАЛЬНОЕ - ПОДГОТОВКА ВОПРОСОВ И ОТВЕТОВ
 //импорт из src/games + вызов функции игры.
 
-import runGame from "../src/index.js";
-import generateQuestionAndAnswer from "../src/games/calc.js";
 
-const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+import startEvenGame from '../src/games/even.js';
 
-runGame(description, generateQuestionAndAnswer);
+startEvenGame();
