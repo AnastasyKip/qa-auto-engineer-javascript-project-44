@@ -10,6 +10,8 @@ const calculate = (a, b, operator) => {
             return a - b;
         case '*':
             return a * b;
+        default: 
+            return null;
     }
 };
 
@@ -20,25 +22,16 @@ const generateQuestionAndAnswer = () => {
     const randomIndex = Math.floor(Math.random() * operators.length);
     const operator = operators[randomIndex];
 
-    let correctAnswer;
-    if (operator === '+') {
-        correctAnswer = number1 + number2;
-    } else if (operator === '-') {
-        correctAnswer = number1 - number2;
-    } else if (operator === '*') {
-        correctAnswer = number1 * number2;
-    }
+    const correctAnswer = calculate(number1, number2, operator);
 
     const question = `${number1} ${operator} ${number2}`;
 
-    const result = {
-        question: question,
+    return {
+        question,
         answer: String(correctAnswer),
     };
+};
 
-    return result;
-
-}
 export default function startCalcGame() {
     runGame(description, generateQuestionAndAnswer);
 }
