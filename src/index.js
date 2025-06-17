@@ -40,5 +40,3 @@ console.log(`Congratulations, ${userName}!`);
 }
 
 export default runGame;
-
-

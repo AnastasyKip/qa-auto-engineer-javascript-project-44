@@ -1,5 +1,7 @@
 import runGame from '../index.js';
 
+const description = 'What is the result of the expression?';
+
 const calculate = (a, b, operator) => {
     switch (operator) {
         case '+':
@@ -37,4 +39,6 @@ const generateQuestionAndAnswer = () => {
     return result;
 
 }
-export default generateQuestionAndAnswer;
+export default function startCalcGame() {
+    runGame(description, generateQuestionAndAnswer);
+}
