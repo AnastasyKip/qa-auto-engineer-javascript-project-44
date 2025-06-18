@@ -11,9 +11,7 @@ const findGcd = (a, b) => {
 };
 
 const generateQuestionAndAnswer = () => {
-    // Safe usage of Math.random() in a non-security-critical context (educational CLI game)
     let number1 = Math.floor(Math.random() * 30) + 1;
-    // Safe usage of Math.random() in a non-security-critical context (educational CLI game)
     let number2 = Math.floor(Math.random() * 30) + 1;
     const question = `${number1} ${number2}`;
     const answer = String(findGcd(number1, number2));

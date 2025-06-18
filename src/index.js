@@ -1,16 +1,3 @@
-//logic for games
-//общая для всех игр логика
-//приветствие
-//запрос имени
-//итерация по раундам
-//сравнение
-//правильный ответ
-//неправильный ответ
-//завершение игры
-
-//Есть ядро программы: src/index.js - 
-// внутри функция, которая принимает подготовленные данные: 
-// правила игры и функцию подготовки данных, которая возвращает массив [question, correctAnswer]?
 import readlineSync from 'readline-sync';
 
 const runGame = (gameDescription, generateQuestionAndAnswer) => {
@@ -19,7 +6,6 @@ const runGame = (gameDescription, generateQuestionAndAnswer) => {
     console.log(`Hello, ${userName}!`);
     console.log(gameDescription);
 
-//пишу цикл с массивом 
 for (let i = 0; i < 3; i++) {
     const round = generateQuestionAndAnswer();
     const question = round.question;

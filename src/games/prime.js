@@ -16,7 +16,6 @@ const isPrime = (n) => {
 
 
 const generateQuestionAndAnswer = () => {
-    // Safe usage of Math.random() in a non-security-critical context (educational CLI game)
     let number = Math.floor(Math.random() * 100) + 1;
     const question = `${number}`;
     const answer = isPrime(number) ? 'yes' : 'no';
