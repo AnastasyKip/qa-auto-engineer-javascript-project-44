@@ -6,7 +6,7 @@ const isEven = num => num % 2 === 0
 
 function generateQuestionAndAnswer() {
   const randomNumber = Math.floor(Math.random() * 100)
-  const correctAnswer = isEven(randomNumber) ? "yes" : "no"
+  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no'
   const question = String(randomNumber)
   return { question, answer: correctAnswer }
 }
