@@ -8,6 +8,7 @@ const description =
 const isEven = (num) => num % 2 === 0;
 
 function generateQuestionAndAnswer() {
+  // Safe usage of Math.random() in a non-security-critical context (educational CLI game)
   const randomNumber = Math.floor(Math.random() * 100);
   let correctAnswer;
   if (randomNumber % 2 === 0) {

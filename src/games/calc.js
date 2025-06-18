@@ -16,9 +16,12 @@ const calculate = (a, b, operator) => {
 };
 
 const generateQuestionAndAnswer = () => {
+    // Safe usage of Math.random() in a non-security-critical context (educational CLI game)
     const number1 = Math.floor(Math.random() * 30) + 1;
+    // Safe usage of Math.random() in a non-security-critical context (educational CLI game)
     const number2 = Math.floor(Math.random() * 30) + 1;
     const operators = ['+', '-', '*'];
+    // Safe usage of Math.random() in a non-security-critical context (educational CLI game)
     const randomIndex = Math.floor(Math.random() * operators.length);
     const operator = operators[randomIndex];
 
