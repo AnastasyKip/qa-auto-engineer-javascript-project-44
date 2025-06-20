@@ -25,7 +25,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/AnastasyKip/qa-auto-engineer-javascript-project-44.git
 cd qa-auto-engineer-javascript-project-44
 make install
-
+```
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AnastasyKip/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AnastasyKip/qa-auto-engineer-javascript-project-44/actions)
