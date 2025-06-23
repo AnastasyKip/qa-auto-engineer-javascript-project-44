@@ -1,4 +1,5 @@
 import runGame from '../index.js'
+import getRandomNumber from '../utils/random.js';
 
 const description = 'What is the result of the expression?'
 
@@ -15,9 +16,9 @@ const calculate = (a, b, operator) => {
   }
 }
 
-const generateQuestionAndAnswer = () => {
-  const number1 = Math.floor(Math.random() * 30) + 1
-  const number2 = Math.floor(Math.random() * 30) + 1
+const makeRound = () => {
+  const number1 = getRandomNumber(1, 30)
+  const number2 = getRandomNumber(1, 30)
   const operators = ['+', '-', '*']
   const randomIndex = Math.floor(Math.random() * operators.length)
   const operator = operators[randomIndex]
@@ -33,5 +34,5 @@ const generateQuestionAndAnswer = () => {
 }
 
 export default function startCalcGame() {
-  runGame(description, generateQuestionAndAnswer)
+  runGame(description, makeRound)
 }

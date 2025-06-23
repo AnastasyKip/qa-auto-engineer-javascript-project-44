@@ -32,18 +32,3 @@ make install
 
 ### SonarQube Quality Gate badge: 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AnastasyKip_qa-auto-engineer-javascript-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AnastasyKip_qa-auto-engineer-javascript-project-44)
-
-### asciinema of brain-even
-https://asciinema.org/a/sYjRAOYpHtKI2yV5yNWnYW7iD
-
-### asciinema of brain-calc
-https://asciinema.org/a/dK0L0m9hmpJIj0QGYmF8bHxXv
-
-### asciinema of brain-gcd
-https://asciinema.org/a/s8zkIEbH063YXCk4pafMZUItD
-
-### asciinema of brain-progression
-https://asciinema.org/a/esWSDlHbPrYnoQs7RbSJYZfI8
-
-### asciinema of brain-prime
-https://asciinema.org/a/pny4sW1mwcBNjFz43mBoAA8r9
