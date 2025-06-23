@@ -1,5 +1,5 @@
 import runGame from '../index.js'
-import getRandomNumber from '../utils/random.js';
+import getRandomNumber from '../utils/random.js'
 
 const description = 'What is the result of the expression?'
 
