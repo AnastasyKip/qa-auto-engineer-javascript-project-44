@@ -1,4 +1,3 @@
-import js from '@eslint/js';
 import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
 import { defineConfig } from 'eslint/config';
@@ -12,8 +11,8 @@ export default defineConfig([
     plugins: {
       stylistic,
     },
-    rules: {
-      ...stylistic.configs.custom,  
-    },
+    extends: [
+      'plugin:stylistic/recommended',
+    ],
   },
 ]);
