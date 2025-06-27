@@ -1,6 +1,6 @@
-import globals from 'globals';
-import stylistic from '@stylistic/eslint-plugin';
-import { defineConfig } from 'eslint/config';
+import globals from 'globals'
+import stylistic from '@stylistic/eslint-plugin'
+import { defineConfig } from 'eslint/config'
 
 export default defineConfig([
   {
@@ -15,4 +15,4 @@ export default defineConfig([
       'plugin:stylistic/recommended',
     ],
   },
-]);
+])
