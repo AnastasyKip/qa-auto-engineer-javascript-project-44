@@ -1,23 +1,10 @@
 import js from '@eslint/js'
-import stylistic from '@stylistic/eslint-plugin'
 import globals from 'globals'
 import { defineConfig } from 'eslint/config'
+import stylistic from '@stylistic/eslint-plugin'
 
 export default defineConfig([
-  {
-    files: ['**/*.js'],
-    languageOptions: {
-      globals: globals.node,
-    },
-    plugins: {
-      stylistic,
-    },
-    rules: {
-      ...stylistic.configs.custom,
-      quotes: ['error', 'single'],
-      semi: ['error', 'never'],
-      indent: ['error', 2],
-      'no-trailing-spaces': 'error',
-    },
-  },
+  stylistic.configs.recommended,
+  { files: ['**/*.{js,mjs,cjs}'], plugins: { js }, extends: ['js/recommended'] },
+  { files: ['**/*.{js,mjs,cjs}'], languageOptions: { globals: globals.node } },
 ])

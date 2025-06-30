@@ -5,14 +5,14 @@ const description = 'What is the result of the expression?'
 
 const calculate = (a, b, operator) => {
   switch (operator) {
-  case '+':
-    return a + b
-  case '-':
-    return a - b
-  case '*':
-    return a * b
-  default:
-    return null
+    case '+':
+      return a + b
+    case '-':
+      return a - b
+    case '*':
+      return a * b
+    default:
+      return null
   }
 }
 
